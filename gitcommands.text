@@ -1,0 +1,117 @@
+CVR@DESKTOP-V9FAKUE MINGW64 ~/Desktop (master)
+$ git --version
+git version 2.45.1.windows.1
+
+CVR@DESKTOP-V9FAKUE MINGW64 ~/Desktop (master)
+$ mkdir 05mu
+
+CVR@DESKTOP-V9FAKUE MINGW64 ~/Desktop (master)
+$ git init
+Initialized empty Git repository in C:/Users/CVR/Desktop/.git/
+
+CVR@DESKTOP-V9FAKUE MINGW64 ~/Desktop (master)
+$ D:
+bash: D:: command not found
+
+CVR@DESKTOP-V9FAKUE MINGW64 ~/Desktop (master)
+$ cd D:
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d
+$ cd 05mu
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu
+$ git add .html
+fatal: not a git repository (or any of the parent directories): .git
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu
+$ git add Index.html
+fatal: not a git repository (or any of the parent directories): .git
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu
+$ git init
+Initialized empty Git repository in D:/05mu/.git/
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git add .html
+fatal: pathspec '.html' did not match any files
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git add .html
+fatal: pathspec '.html' did not match any files
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git add Index.html
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git add *.html
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git status
+On branch master
+
+No commits yet
+
+Changes to be committed:
+  (use "git rm --cached <file>..." to unstage)
+        new file:   About.html
+        new file:   ContactUs.html
+        new file:   Home.html
+        new file:   Shop.html
+        new file:   index.html
+
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git config -global user.email "someshwari2418@gmail.com"
+error: did you mean `--global` (with two dashes)?
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git config --global user.email "someshwari2418@gmail.com"
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git config --global user.name "someshwari"
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git commit -m "git first commit"
+[master (root-commit) 3f98f6f] git first commit
+ 5 files changed, 58 insertions(+)
+ create mode 100644 About.html
+ create mode 100644 ContactUs.html
+ create mode 100644 Home.html
+ create mode 100644 Shop.html
+ create mode 100644 index.html
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git log
+commit 3f98f6fce01d4fdabf9e3adb9419c8cfdd870b09 (HEAD -> master)
+Author: someshwari <someshwari2418@gmail.com>
+Date:   Thu Dec 11 09:34:08 2025 +0530
+
+    git first commit
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git referncelog
+git: 'referncelog' is not a git command. See 'git --help'.
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git referencelog
+git: 'referencelog' is not a git command. See 'git --help'.
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$ git reflog
+3f98f6f (HEAD -> master) HEAD@{0}: commit (initial): git first commit
+
+CVR@DESKTOP-V9FAKUE MINGW64 /d/05mu (master)
+$
+ git remote add origin https://github.com/someshwari24/My-first-local-Repository.git
+ git push -u  origin master
+Enumerating objects: 7, done.
+Counting objects: 100% (7/7), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (7/7), done.
+Writing objects: 100% (7/7), 861 bytes | 861.00 KiB/s, done.
+Total 7 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), done.
+To https://github.com/someshwari24/My-first-local-Repository.git
+ * [new branch]      master -> master
+branch 'master' set up to track 'origin/master'.
+
